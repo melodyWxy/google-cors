@@ -1,6 +1,8 @@
-var background = (function () {
+var background = (function sxcip() {
   var tmp = {};
   chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    // console.log(1,request,sender,sendResponse);
+    
     for (var id in tmp) {
       if (tmp[id] && (typeof tmp[id] === "function")) {
         if (request.path == 'background-to-popup') {
