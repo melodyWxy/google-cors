@@ -1,7 +1,6 @@
 var background = (function () {
   var tmp = {};
   chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    console.log(request);
     sendResponse('我是后台，我已收到你的消息：' + JSON.stringify(request));
     for (var id in tmp) {
       if (tmp[id] && (typeof tmp[id] === "function")) {
