@@ -1,4 +1,4 @@
-var background = (function sxcip() {
+var background = (function () {
   var tmp = {};
   chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     // console.log(1,request,sender,sendResponse);
@@ -19,18 +19,12 @@ var background = (function sxcip() {
 })();
 
 var load = function () {
-  var test = document.querySelector(".test");
-  var reload = document.querySelector(".reload");
   var toggle = document.querySelector(".toggle");
-  var support = document.querySelector(".support");
   var options = document.querySelector(".options");
   var donation = document.querySelector(".donation");
   var whitelist = document.querySelector(".whitelist");
   /*  */
-  test.addEventListener("click", function () {background.send("test")});
-  reload.addEventListener("click", function () {background.send("reload")});
   toggle.addEventListener("click", function () {background.send("toggle")});
-  support.addEventListener("click", function () {background.send("support")});
   options.addEventListener("click", function () {background.send("options")});
   donation.addEventListener("click", function () {background.send("donation")});
   whitelist.addEventListener("click", function () {background.send("whitelist")});
