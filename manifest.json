@@ -10,11 +10,11 @@
          "64": "data/icons/64.png"
       },
       "default_popup": "data/popup/popup.html",
-      "default_title": "Access-Control-Allow-Origin"
+      "default_title": "跨域神器"
    },
    "commands": {
       "toggle-default-mode": {
-         "description": "Access-Control-Allow-Origin",
+         "description": "跨域神器",
          "suggested_key": {
             "default": "Ctrl+Shift+D",
             "mac": "Command+Shift+D"
@@ -37,7 +37,7 @@
       "page": "data/options/options.html"
    },
    "permissions": ["storage", "activeTab", "\u003Call_urls>", "webRequest", "webRequestBlocking"],
-   "short_name": "access-control-allow-origin",
+   "short_name": "跨域神器",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "https://github.com/melodyWxy/google-cors"
+   "version": "1.0.0"
 }
